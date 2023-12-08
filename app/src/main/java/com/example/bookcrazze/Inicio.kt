@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentManager
 
 class Inicio : AppCompatActivity() {
     private val secondFragment= SecondFragment()
+    private val secondFragment2= FragmentoLista()
     private lateinit var fragmentManager : FragmentManager
     private lateinit var btnInicio: ImageButton
     private lateinit var btnLibros: ImageButton
@@ -31,10 +32,14 @@ class Inicio : AppCompatActivity() {
             transaction.replace(R.id.fragment_container_view_dinamic, secondFragment)
             transaction.addToBackStack(null)
             transaction.commit()
+            
+            val params = principalLinear.layoutParams as LinearLayoutCompat.LayoutParams
+            params.weight = 4f
+            principalLinear.layoutParams = params
         }
         btnLibros.setOnClickListener {
             val transaction = fragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container_view_dinamic, secondFragment)
+            transaction.replace(R.id.fragment_container_view_dinamic, secondFragment2)
             transaction.addToBackStack(null)
             transaction.commit()
 

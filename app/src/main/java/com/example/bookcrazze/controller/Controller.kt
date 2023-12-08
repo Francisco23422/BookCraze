@@ -8,7 +8,7 @@ import com.example.bookcrazze.dao.DaoHotels
 import com.example.bookcrazze.models.Hotel
 
 class Controller ( val context : Context){
-    lateinit var listHotels : MutableList<Hotel> //lista de objetos
+    private lateinit var listHotels: MutableList<Hotel>
     init {
         initData()
     }
@@ -23,7 +23,9 @@ class Controller ( val context : Context){
             println (it)
         }
     }
-
+    fun getListHotels(): MutableList<Hotel> {
+        return listHotels
+    }
     // Cargamos nuestro AdapterHotgel al adapter del RecyclerView
     fun setAdapter() {
         val myActivity = context as MainActivity

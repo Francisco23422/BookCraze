@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {/*
     private fun initRecyclerView() {
         binding.myRecyclerView.layoutManager = LinearLayoutManager( this)
     }*/
+
     lateinit var controller : Controller
     lateinit var binding : ActivityMainBinding
     // lateinit var recyclerView: RecyclerView
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity() {/*
     fun init(){
         initRecyclerView()
         controller = Controller( this) //Creamos el controler
-        controller.setAdapter()
+       // controller.setAdapter()
         //controller.loggOut() //muestro el log en pantalla
     }
     private fun initRecyclerView() {

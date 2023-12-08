@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.blogspot.atifsoftwares.animatoolib.Animatoo
-import com.example.bookcraze.Usernames
 import com.example.bookcrazze.databinding.ActivityLoginBinding
 
 class Login : AppCompatActivity() {
@@ -38,7 +37,7 @@ class Login : AppCompatActivity() {
             intent.putExtra("username", userFound.username)
             startActivity(intent)
 
-            Animatoo.animateSwipeRight(this)
+            Animatoo.animateFade(this)
         } else {
             binding.tilUsuario.error = "Usuario o contraseña incorrecta"
             binding.tilContrasenna.error = "Usuario o contraseña incorrecta"

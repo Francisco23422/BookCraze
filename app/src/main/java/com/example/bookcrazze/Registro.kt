@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
 import com.blogspot.atifsoftwares.animatoolib.Animatoo
-import com.example.bookcraze.Username
-import com.example.bookcraze.Usernames
 import com.example.bookcrazze.databinding.ActivityRegistroBinding
 
 class Registro : AppCompatActivity() {

@@ -1,7 +1,7 @@
 package com.example.bookcrazze.interfaceDao
 
-import com.example.bookcrazze.models.Hotel
+import com.example.bookcrazze.models.Book
 
 interface InterfaceDao {
-    fun getDataHotels(): List<Hotel>
+    fun getDataHotels(): List<Book>
 }

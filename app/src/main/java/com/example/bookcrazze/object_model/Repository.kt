@@ -1,51 +1,28 @@
 package com.example.bookcrazze.object_model
 
-import com.example.bookcrazze.models.Hotel
+import com.example.bookcrazze.models.Book
 
 object Repository {
-    val listHotels : List<Hotel> = listOf(
-        Hotel(
-            "Antiguo Palacio de Atienza" ,
-            "Atienza",
-            "Guadalajara" ,
-            "975 45 54 45",
-            "https://www.tuscasasrurales.com/imagenes/galeria/8619_g28/ico_8619.jpg"
+    val listHotels : List<Book> = listOf(
+        Book(
+            "Stephen King" ,
+            "+12",
+            "https://images.hola.com/imagenes/estar-bien/20181030132154/libros-novela-negra-y-terror-noche-de-miedo/0-615-298/it-a.jpg"
         ),
-        Hotel(
-            "La Casa del Vaquero" ,
-            "Abiada",
-            "Cantabria" ,
-            "978 65 56 65",
-            "https://www.tuscasasrurales.com/imagenes/galeria/8619_g28/ico_8619.jpg"
+        Book(
+            "El Ritual" ,
+            "+18",
+            "https://images.hola.com/imagenes/estar-bien/20181030132154/libros-novela-negra-y-terror-noche-de-miedo/0-615-293/el-ritual-a.jpg"
         ),
-        Hotel(
-            "La Casa de juan" ,
-            "jaen",
-            "jaen" ,
-            "645 65 56 56",
-            "https://www.tuscasasrurales.com/imagenes/galeria/8619_g28/ico_8619.jpg"
+        Book(
+            "Caroline" ,
+            "+11",
+            "https://img.remediosdigitales.com/caa8b5/81lu6i-sgdl/450_1000.jpeg"
         ),
-        Hotel(
-            "Antiguo Palacio de Atienza" ,
-            "Atienza",
-            "Guadalajara" ,
-            "975 45 54 45",
-            "https://www.tuscasasrurales.com/imagenes/galeria/8619_g28/ico_8619.jpg"
-        ),
-        Hotel(
-            "La Casa del Vaquero" ,
-            "Abiada",
-            "Cantabria" ,
-            "978 65 56 65",
-            "https://www.tuscasasrurales.com/imagenes/galeria/8619_g28/ico_8619.jpg"
-        ),
-        Hotel(
-            "Parador de Jaén" ,
-            "jaen",
-            "jaen" ,
-            "645 65 56 56",
-            "https://paradores.es/sites/default/files/images/" +
-                    "Parador%20de%20Ja%C3%A9n%2047%20ExterioresOK.jpg"
+        Book(
+            "Cole de locos" ,
+            "+8",
+            "https://saposyprincesas.elmundo.es/wp-content/uploads/2016/10/cole-de-locos-1.jpg"
         )
     )
 }

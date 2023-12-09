@@ -4,19 +4,20 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.bookcrazze.databinding.ItemHotelBinding
-import com.example.bookcrazze.models.Hotel
+import com.example.bookcrazze.models.Book
 
-class ViewHHotel (view: View,var deleteOnClick: (Int) -> Unit,
-                  var updateOnClick: (Int) -> Unit):
-    RecyclerView.ViewHolder (view){
-    lateinit var binding: ItemHotelBinding
+class ViewBook (
+    view: View, var deleteOnClick: (Int) -> Unit,
+    var updateOnClick: (Int) -> Unit):  RecyclerView.ViewHolder (view){
+
+    var binding: ItemHotelBinding
     init {
         binding = ItemHotelBinding.bind(view)
     }
-    //método que se encarga de mapear los item por propiedad del modelo.
-    fun renderize(hotel : Hotel){
+
+    fun renderize(hotel : Book){
         binding.nameTextView.setText(hotel. name)
-        binding.cityTextView.setText(hotel. city)
+        binding.cityTextView.setText(hotel. edad)
 
         Glide
             .with( itemView.context)

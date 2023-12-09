@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.bookcrazze.adapter.AdapterHotel
+import com.example.bookcrazze.adapter.Adapter
 import com.example.bookcrazze.controller.Controller
 import com.example.bookcrazze.databinding.FragmentFragmentoListaBinding
 
 class FragmentoLista : Fragment() {
     lateinit var binding : FragmentFragmentoListaBinding
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: AdapterHotel
+    private lateinit var adapter: Adapter
     private lateinit var controller: Controller
 
     override fun onCreateView(
@@ -32,7 +32,7 @@ class FragmentoLista : Fragment() {
         val listHotels = controller.getListHotels()
 
         // Configurar el adaptador con la lista de hoteles y el fragmento como oyente
-        adapter = AdapterHotel(listHotels, this::onDeleteClick, this::onUpdateClick)
+        adapter = Adapter(listHotels, this::onDeleteClick, this::onUpdateClick)
         recyclerView.adapter = adapter
 
         return view

@@ -33,7 +33,7 @@ class Login : AppCompatActivity() {
         }
 
         if (userFound != null) {
-            val intent = Intent(this, Inicio::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             intent.putExtra("username", userFound.username)
             startActivity(intent)
 

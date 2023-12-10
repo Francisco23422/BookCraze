@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:backgroundTint="#FF0000"
+        android:backgroundTint="#00008B"
         android:src="@drawable/annadir"
         />
 

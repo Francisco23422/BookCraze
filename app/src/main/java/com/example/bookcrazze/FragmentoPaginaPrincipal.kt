@@ -5,15 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.bookcrazze.databinding.FragmentFragmentoPaginaPrincipalBinding
 import com.example.bookcrazze.databinding.FragmentSecondBinding
 
-class SecondFragment : Fragment() {
-    private lateinit var binding : FragmentSecondBinding
+class FragmentoPaginaPrincipal : Fragment() {
+    private lateinit var binding : FragmentFragmentoPaginaPrincipalBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentSecondBinding.inflate(inflater,container,false)
+        binding = FragmentFragmentoPaginaPrincipalBinding.inflate(inflater,container,false)
         return binding.root
     }
 

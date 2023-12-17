@@ -2,13 +2,12 @@ package com.example.bookcrazze
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
 import androidx.appcompat.widget.LinearLayoutCompat
-import androidx.core.view.marginTop
 import androidx.fragment.app.FragmentManager
 import com.example.bookcrazze.databinding.ActivityInicioBinding
-import com.example.bookcrazze.databinding.ActivityLoginBinding
-import com.example.bookcrazze.databinding.FragmentMainBinding
+import com.example.bookcrazze.fragmentos.FragmentoLista
+import com.example.bookcrazze.fragmentos.FragmentoPaginaPrincipal
+import com.example.bookcrazze.fragmentos.SecondFragment
 
 class Inicio : AppCompatActivity() {
     private val secondFragment= SecondFragment()

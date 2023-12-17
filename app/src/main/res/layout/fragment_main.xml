@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bacground_redondos"
-    tools:context=".MainFragment" >
+    tools:context=".fragmentos.MainFragment" >
 
     <TextView
         android:id="@+id/txt_titulo"

@@ -4,12 +4,14 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bookcrazze.R
+import com.example.bookcrazze.controller.Controller
 import com.example.bookcrazze.models.Book
 
 class Adapter(
     var listHotel : MutableList<Book>,
     var deleteOnClick: (Int) -> Unit,
-    var updateOnClick: (Int) -> Unit
+    var updateOnClick: (Int) -> Unit,
+    var controller: Controller
 ) : RecyclerView.Adapter<ViewBook>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewBook {
@@ -17,6 +19,7 @@ class Adapter(
         val layoutItemHotel = R.layout. item_hotel
         return ViewBook(
             layoutInflater.inflate(layoutItemHotel, parent, false),
+            controller,
             deleteOnClick,
             updateOnClick
         )

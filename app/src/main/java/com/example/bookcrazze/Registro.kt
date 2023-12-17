@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.content.Intent
 import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.example.bookcrazze.databinding.ActivityRegistroBinding
+import com.example.bookcrazze.models.Username
+import com.example.bookcrazze.models.Usernames
 
 class Registro : AppCompatActivity() {
     private lateinit var binding: ActivityRegistroBinding

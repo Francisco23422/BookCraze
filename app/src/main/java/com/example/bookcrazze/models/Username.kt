@@ -1,4 +1,4 @@
-package com.example.bookcrazze
+package com.example.bookcrazze.models
 
 data class Username(
     val name: String,

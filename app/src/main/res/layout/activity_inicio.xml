@@ -37,7 +37,7 @@
         android:orientation="vertical">
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragment_container_view_dinamic"
-            android:name="com.example.bookcrazze.FragmentoPaginaPrincipal"
+            android:name="com.example.bookcrazze.fragmentos.FragmentoPaginaPrincipal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
     </androidx.appcompat.widget.LinearLayoutCompat>

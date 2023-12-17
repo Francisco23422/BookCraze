@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.example.bookcrazze.databinding.ActivityLoginBinding
+import com.example.bookcrazze.models.Usernames
 
 class Login : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -33,7 +34,7 @@ class Login : AppCompatActivity() {
         }
 
         if (userFound != null) {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Inicio::class.java)
             intent.putExtra("username", userFound.username)
             startActivity(intent)
 

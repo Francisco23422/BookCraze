@@ -8,6 +8,13 @@
     android:layout_height="match_parent"
     tools:context=".Inicio"
     android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/principal_linear"
         android:layout_width="match_parent"
@@ -30,6 +37,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -40,42 +48,6 @@
             android:name="com.example.bookcrazze.fragmentos.FragmentoPaginaPrincipal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
-    </androidx.appcompat.widget.LinearLayoutCompat>
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#00008B"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:gravity="center">
-        <ImageButton
-            android:id="@+id/btn_inicio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="8dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/icon_home"
-            app:backgroundTint="#00008B" />
-        <ImageButton
-            android:id="@+id/btn_libros"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="8dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/icon_libros"
-            app:backgroundTint="#00008B" />
-        <ImageButton
-            android:id="@+id/btn_favoritos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="8dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:src="@drawable/icon_favoritos"
-            app:backgroundTint="#00008B" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

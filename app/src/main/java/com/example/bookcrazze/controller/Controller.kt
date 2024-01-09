@@ -63,18 +63,6 @@ class Controller ( val context : Context){
 
 
     fun updateHotel(pos: Int, recyclerView: RecyclerView) {
-        val adapter = recyclerView.adapter as Adapter
 
-        val hotelToUpdate = listHotels[pos]
-
-        val updatedHotel = Book(
-            "BookCrazeEditado",
-            hotelToUpdate.edad,
-            "https://l450v.alamy.com/450ves/pdek31/1950-foto-muestra-la-portada-de-un-libro-guia-ingles-visitantes-a-paris-como-el-usado-por-el-fotografo-j-allan-efectivo-en-sus-viajes-a-la-ciudad-francesa-mostrando-el-famoso-simbolo-de-paris-la-torre-eiffel-uno-puede-notar-el-glosario-de-salones-de-te-lo-cual-seria-importante-para-visitantes-en-ingles-en-este-momento-pdek31.jpg"
-        )
-
-        listHotels[pos] = updatedHotel
-
-        adapter.notifyItemChanged(pos)
     }
 }
